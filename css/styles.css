@@ -94,6 +94,10 @@ a:hover {
 .headroom--unpinned {top: -100px;}
 .headroom--pinned {top: 0;}
 
+@media all and (max-width: 1010px) {
+    #header { display: none; }
+}
+
 
 /* Override bootstrap default */
 .nav .open > a,
