@@ -26,6 +26,7 @@
 						<li class="nav-item"><a href="#showcase">Showcase</a></li>
 						<li class="nav-item"><a href="#code">Code Repository</a></li>
 						<li class="nav-item"><a href="#banners">Banners</a></li>
+						<li class="nav-item"><a href="#comments">Comments</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item"><a title="View project on GitHub" href="https://github.com/HelloFangaming/HelloMarioEngine" target="_blank"><span class="fa fa-github"></span></a></li>
@@ -461,6 +462,21 @@
 			<img class="img-responsive center-block" src="img/userbarblank.png">
 			<hr>
         </div>
+		<!-- Anchor Link --><span id="comments"></span>
+    </section>
+    <!-- End Content Block -->
+	
+	<!-- Start Content Block -->
+    <section class="content-main content-block">
+			
+		<div class="container">
+			<div class="centered">
+	        	<h1>Comments</h1>
+			</div>
+			<hr>
+			<div id="disqus_thread" class="centered"></div>
+			<hr>
+        </div>
     </section>
     <!-- End Content Block -->
 	
@@ -480,13 +496,28 @@
 	
 	<!-- Google Analytics -->
 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-60777521-1', 'auto');
-  ga('send', 'pageview');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-60777521-1', 'auto');
+	ga('send', 'pageview');
 	</script>
+	
+	<!-- Load Disqus Comments -->
+	<script>
+	var disqus_developer = 1;
+	var disqus_config = function (){
+		this.page.url = "http://hellofangaming.github.io/HelloMarioEngine/";
+		this.page.identifier = "HELLOMARIOENGINE";
+	};
+	(function(){
+		var d = document, s = d.createElement('script');
+		s.src = '//hellofangaming.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	
 </body>
 </html>
