@@ -7,8 +7,8 @@
 	<meta name="keywords" content="hello mario engine, hello engine, gamemaker studio, super mario">
 	<meta name="description" content="The Hello Mario Engine is an open source Mario engine that you can use with GameMaker: Studio for free to create your own Mario games.">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<link href="css/style-library.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 </head>
@@ -20,13 +20,13 @@
 			<div class="container">
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-						<li class="nav-item"><a href="#header">Home</a></li>
-						<li class="nav-item"><a href="#download">Download</a></li>
-						<li class="nav-item"><a href="#start">Getting Started</a></li>                       
-						<li class="nav-item"><a href="#showcase">Showcase</a></li>
-						<li class="nav-item"><a href="#code">Code Repository</a></li>
-						<li class="nav-item"><a href="#banners">Banners</a></li>
-						<li class="nav-item"><a href="#comments">Comments</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#header">Home</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#download">Download</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#start">Getting Started</a></li>                       
+						<li class="nav-item"><a class="smoothscroll" href="#showcase">Showcase</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#code">Code Repository</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#banners">Banners</a></li>
+						<li class="nav-item"><a class="smoothscroll" href="#comments">Comments</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item"><a title="View project on GitHub" href="https://github.com/HelloFangaming/HelloMarioEngine" target="_blank"><span class="fa fa-github"></span></a></li>
@@ -51,10 +51,10 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-5 col-xs-12">
-							<a href="#download" class="btn btn-block btn-danger"><span class="fa fa-download"></span> Download</a>
+							<a href="#download" class="smoothscroll btn btn-block btn-danger"><span class="fa fa-download"></span> Download</a>
 						</div>
 						<div class="col-sm-5 col-xs-12">
-							<a href="#learn" class="btn btn-block btn-info"><span class="fa fa-star"></span> Learn More</a>
+							<a href="#learn" class="smoothscroll btn btn-block btn-info"><span class="fa fa-star"></span> Learn More</a>
 						</div>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 			<div class="row">
 				<div class="col-sm-4 col-xs-12 text-center">
 					<div class="icon-outline">
-						<span class="fa fa-magic"></span>
+						<span class="fa fa-lightbulb-o"></span>
 					</div>
 					<div>
 						<h3>Easy to Use</h3>
@@ -84,7 +84,7 @@
 				</div>
 				<div class="col-sm-4 col-xs-12 text-center">
 					<div class="icon-outline">
-						<span class="fa fa-wrench"></span>
+						<span class="fa fa-smile-o"></span>
 					</div>
 					<div>
 						<h3>User Friendly</h3>
@@ -93,7 +93,7 @@
 				</div>
 				<div class="col-sm-4 col-xs-12 text-center">
 					<div class="icon-outline">
-						<span class="fa fa-users"></span>
+						<span class="fa fa-shopping-basket"></span>
 					</div>
 					<div>
 						<h3>Feature Packed</h3>
@@ -128,7 +128,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="https://github.com/HelloFangaming/HelloMarioEngine/files/1561583/Hello.Mario.Engine.Source.v6.1.6.zip" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'source');"><span class="fa fa-download"></span> Download</a>
+					<a href="https://github.com/HelloFangaming/HelloMarioEngine/files/1561583/Hello.Mario.Engine.Source.v6.1.6.zip" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'hme-source');"><span class="fa fa-download"></span> Download</a>
 				</div>
 				
 			</div>
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="https://github.com/HelloFangaming/HelloMarioEngine/files/1561584/Hello.Mario.Engine.Preview.v6.1.6.zip" target="_blank" class="btn btn-block btn-danger"><span class="fa fa-download" onclick="ga('send', 'event', 'a', 'click', 'preview');"></span> Download</a>
+					<a href="https://github.com/HelloFangaming/HelloMarioEngine/files/1561584/Hello.Mario.Engine.Preview.v6.1.6.zip" target="_blank" class="btn btn-block btn-danger"><span class="fa fa-download" onclick="ga('send', 'event', 'a', 'click', 'hme-preview');"></span> Download</a>
 				</div>
 				
 			</div>
@@ -169,7 +169,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="https://hellofangaming.github.io/files/Hello Mario Engine Legacy.zip" target="_blank" class="btn btn-block btn-danger"><span class="fa fa-download" onclick="ga('send', 'event', 'a', 'click', 'legacy');"></span> Download</a>
+					<a href="https://hellofangaming.github.io/files/Hello Mario Engine Legacy.zip" target="_blank" class="btn btn-block btn-danger"><span class="fa fa-download" onclick="ga('send', 'event', 'a', 'click', 'hme-legacy');"></span> Download</a>
 				</div>
 				
             </div>
@@ -272,7 +272,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="http://www.indiedb.com/games/hello-fangaming-collection" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'hellofangamingcollection');"><span class="fa fa-arrow-right"></span> Learn More</a>
+					<a href="http://www.indiedb.com/games/hello-fangaming-collection" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'hme-hellofangamingcollection');"><span class="fa fa-arrow-right"></span> Learn More</a>
 				</div>
 				
 			</div>
@@ -290,7 +290,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="http://www.indiedb.com/games/super-mario-dynamo" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'dynamo');"><span class="fa fa-arrow-right"></span> Learn More</a>
+					<a href="http://www.indiedb.com/games/super-mario-dynamo" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'hme-dynamo');"><span class="fa fa-arrow-right"></span> Learn More</a>
 				</div>
 				
 			</div>
@@ -308,7 +308,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<a href="http://www.indiedb.com/games/super-mario-eclipse" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'eclipse');"><span class="fa fa-arrow-right"></span> Learn More</a>
+					<a href="http://www.indiedb.com/games/super-mario-eclipse" target="_blank" class="btn btn-block btn-danger" onclick="ga('send', 'event', 'a', 'click', 'hme-eclipse');"><span class="fa fa-arrow-right"></span> Learn More</a>
 				</div>
 				
 			</div>
@@ -370,7 +370,7 @@
 						</div>
 						<div>
 							<p>Want to show your support? Click the star button to star the project!</p>
-							<iframe src="https://ghbtns.com/github-btn.html?user=hellofangaming&repo=HelloMarioEngine&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+							<a class="github-button" href="https://github.com/HelloFangaming/HelloMarioEngine" data-icon="octicon-star" data-show-count="true" aria-label="Star HelloFangaming/HelloMarioEngine on GitHub">Star</a>
 						</div>
 					</div>
 				</div>
@@ -477,7 +477,8 @@
     <!-- End Footer -->
 	
     <!-- Scripts -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>			
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>			
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	
 	<!-- Google Analytics -->
@@ -486,7 +487,7 @@
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-60777521-1', 'auto');
+	ga('create', 'UA-60777521-2', 'auto');
 	ga('send', 'pageview');
 	</script>
 	
